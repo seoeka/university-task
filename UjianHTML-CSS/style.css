@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.container .title {
+    max-width:500px;
+    width: 80%;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+.title .judul {
+    font-size: 40px;
+    color: rgb(79,163,227);
+    font-family: Arial;
+}
+.title .deskripsi{
+    font-size: large;
+    font-family: Helvetica;
+    margin-top: 10px;
+}
+.container .main {
+    align-items: center;
+    max-width:800px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 25px 25px 25px;
+    font-family: Helvetica;
+    border-radius: 4px;
+}
+form .tipe-perjalanan .kategori{
+    display: flex;
+    width: 70%;
+    margin: 4px 0;
+    justify-content: space-between;
+}
+.tipe-perjalanan .kategori label{
+    display:flex;
+    align-items: center;
+}
+.tipe-perjalanan label{
+    font-weight: bold;
+    margin-right: 8px;
+}
+.tipe-perjalanan .kategori .dot{
+    height: 18px;
+    width: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: grey;
+}
+#dot-1:checked ~ .kategori label .one,
+#dot-2:checked ~ .kategori label .two,
+#dot-3:checked ~ .kategori label .three{
+    border-color: #ffffff;
+    background: rgb(79,163,227);
+}
+.container form .detail-perjalanan,
+.container form .detail-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.detail-perjalanan .kotak-input {
+    width: calc(100% / 2 - 12px);
+    margin-top: 18px;
+}
+.detail-user .kotak-input {
+    width: calc(100% / 3 - 15px);
+    margin-top: 18px;
+}
+.kotak-input {
+    position: relative;
+    width: 200px;
+}
+
+.kotak-input input,
+.kotak-input select {
+    width: 100%;
+    padding: 30px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    font-weight: 600;
+}
+.kotak-input label {
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color:  rgb(79,163,227);
+    background: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button input{
+    margin-top: 18px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 4px;
+    background: rgb(79,163,227);
+}

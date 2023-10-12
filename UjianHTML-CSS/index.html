@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travelika</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="title">
+            <div class="judul">
+                <label>AYO NAIK KERETA API</label>
+            </div>
+            <div class="deskripsi">
+                <label>Nikmati perjalanan mu bersama kuda besi.</label>
+            </div>
+        </div>
+        </form>
+    <div class="container">
+        <form action="#" class="main">
+            <div class="tipe-perjalanan">
+                <input type="radio" name="perjalanan" id="dot-1">
+                <input type="radio" name="perjalanan" id="dot-2">
+                <input type="radio" name="perjalanan" id="dot-3">
+                <div class="kategori">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="perjalanan">Sekali perjalanan</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="perjalanan">Pulang Pergi</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="perjalanan">Wisata</span>
+                    </label>
+                </div>
+            </div>
+            <div class="detail-perjalanan">
+                <div class="kotak-input">
+                    <span class="details"></span>
+                    <label for="berangkat">BERANGKAT DARI</label>
+                    <input type="text" name="berangkat" placeholder="Stasiun Keberangkatan">
+                </div>
+                <div class="kotak-input">
+                    <span class="details"></span>
+                    <label for="tujuan">TUJUAN</label>
+                    <input type="text" name="tujuan" placeholder="Stasiun Tujuan">
+                </div>
+                <div class="kotak-input">
+                    <span class="details"></span>
+                    <label for="tgl-berangkat">TANGGAL KEBERANGKATAN</label>
+                    <input type="date" name="tgl-berangkat">
+                </div>
+                <div class="kotak-input">
+                    <span class="details"></span>
+                    <label for="tgl-pulang">TANGGAL PULANG</label>
+                    <input type="date" name="tgl-pulang"  placeholder="YYYY-MM-DD">
+                </div>
+            </div>
+            <div class="detail-user">
+                <div class="kotak-input">
+                    <label for="dewasa">DEWASA(18+)</label>
+                    <select name="dewasa">
+                        <option value="pilihan1">1</option>
+                        <option value="pilihan2">2</option>
+                        <option value="pilihan3">3</option>
+                    </select>
+                </div>
+                <div class="kotak-input">
+                    <label for="anak">ANAK-ANAK(0-17)</label>
+                    <select name="anak">
+                        <option value="pilihan1">0</option>
+                        <option value="pilihan2">1</option>
+                        <option value="pilihan3">2</option>
+                    </select>
+                </div>
+                <div class="kotak-input">
+                    <label for="kelas">KELAS</label>
+                    <select name="kelas">
+                        <option value="pilihan1">Ekonomi</option>
+                        <option value="pilihan2">Bisnis</option>
+                        <option value="pilihan3">Eksekutif</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="TAMPILKAN JADWAL">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
